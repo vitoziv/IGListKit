@@ -67,7 +67,7 @@
     }
 
     [debug addObject:[NSString stringWithFormat:@"Collection view details:"]];
-    [debug addObjectsFromArray:IGListDebugIndentedLines([self.collectionView debugDescriptionLines])];
+    [debug addObjectsFromArray:IGListDebugIndentedLines([(UICollectionView *)self.collectionView debugDescriptionLines])];
 #endif // #if IGLK_DEBUG_DESCRIPTION_ENABLED
     return debug;
 }
